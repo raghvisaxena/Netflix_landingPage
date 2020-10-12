@@ -3,46 +3,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
+	<link rel="icon" href="assets/favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="assets/jquery.min.js"></script>
 </head>
 <body>
     <div class="cover">
         <div class="header">
             <ul class="headerList">
                 <li>
-                    <img class="icon" src="assests/icon.svg" alt="">
+                    <img class="icon" src="assets/icon.svg" alt="">
                 </li>
                 <li>
-                    <button class="signIn">
+                    <button class="signIn" id="sn">
                         Sign in
                     </button>
                 </li>
             </ul>
         </div>
         <div class="coverH1">
-                <h1 class="heading1">
+                <h1 class="heading1" id="tm">
                     Unlimited movies, TV shows and more.
                 </h1>
-                <h2>
+                <h2 id="th2">
                     Watch anywhere. Cancel anytime.
                 </h2>
-                <button class="try">TRY IT NOW ></button>
+                <button class="try" id="ttry1">TRY IT NOW ></button>
         </div>
     </div>
     <div class="section1">
         <div class="card1">
-            <h1 class="heading2">Enjoy on your TV.</h1>
-            <h3 class="subhead2">
+            <h1 class="heading2" id="t1">Enjoy on your TV.</h1>
+            <h3 class="subhead2" id="t2">
                 Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
             </h3>
-            <button class="card1Btn">
+            <button class="card1Btn" id="ttry2">
                 TRY IT NOW >
             </button>
         </div>
         <div class="card2">
-            <div class="video"><video src="assests/netflix.m4v" autoplay loop muted inline width="385px" height="280px">
+            <div class="video"><video src="assets/netflix.m4v" autoplay loop muted inline width="385px" height="280px">
             </video></div>
-            <img src="assests/tv.png" class="tv" alt=""></img>
+            <img src="assets/tv.png" class="tv" alt=""></img>
         </div>
     </div>
     <div class="section2">
@@ -51,30 +53,30 @@
             <div class="listdiv">
                 <div class="listdiv1">
                     <img class="listimg" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="">
-                    <p class="listtext">Downloading...</p>
+                    <p class="listtext" id="t3">Downloading...</p>
                 </div>
-                <div class="gif_container"><img class="gif" src="assests/download.gif" alt=""></div> 
+                <div class="gif_container"><img class="gif" src="assets/download.gif" alt=""></div> 
             </div>
         </div>
         <div class="card4">
-            <h1 class="heading2">Download your shows to watch on the go.</h1>
-            <h3 class="subhead2">Save your data and watch all your favourites offline.
+            <h1 class="heading2" id="t4">Download your shows to watch on the go.</h1>
+            <h3 class="subhead2" id="t5">Save your data and watch all your favourites offline.
             </h3>
-            <button class="card1Btn">
+            <button class="card1Btn" id="ttry3">
                 TRY IT NOW >
             </button>
         </div>
     </div>
     <div class="section3">
         <div class="card5">
-            <h1 class="heading3">Watch everywhere.</h1>
-            <h3 class="subhead3">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
-            <button class="card1Btn">
+            <h1 class="heading3" id="t6">Watch everywhere.</h1>
+            <h3 class="subhead3" id="t7">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
+            <button class="card1Btn" id="ttry4">
                 TRY IT NOW >
             </button>
         </div>
         <div class="card6">
-            <video class="sartaj" src="assests/sacredgames.m4v" autoplay loop muted inline width="380px" height="260px"></video>
+            <video class="sartaj" src="assets/sacredgames.m4v" autoplay loop muted inline width="380px" height="260px"></video>
             <div class="sartaj_img">
                 <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" alt="">
             </div>
@@ -82,84 +84,88 @@
     </div>
     <div class="section4">
         <div >
-            <h1 class="heading4">Frequently Asked Questions</h1>
+            <h1 class="heading4"id="t8">Frequently Asked Questions</h1>
         </div>
         <div class=" drop_container">
             <ul class="list1">
                 <li>
-                   <button class="drop">What is Netflix?</button> 
-                   <div class="panel"><p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+                   <button class="drop" id="t9">What is Netflix?</button> 
+                   <div class="panel"><p id="t10">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
                     <br>
                     You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p></div>
                 </li>
                 <li>
-                    <button class="drop">How much does Netflix cost?</button>
+                    <button class="drop" id="f1">How much does Netflix cost?</button>
                     <div class="panel">
-                        <p>Watch Netflix on your smartphone, tablet, smart TV, laptop or streaming device, all for one low fixed monthly fee. Plans start from ₹ 199 a month. No extra costs or contracts.</p>
+                        <p id="t11">Watch Netflix on your smartphone, tablet, smart TV, laptop or streaming device, all for one low fixed monthly fee. Plans start from ₹ 199 a month. No extra costs or contracts.</p>
                     </div>
                 </li>
                 <li>
-                    <button class="drop">Where can I watch?</button>
-                    <div class="panel"><p>Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                    <button class="drop" id="f2">Where can I watch?</button>
+                    <div class="panel"><p id="t12">Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
 
                         You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p></div>
                 </li>
                 <li>
-                    <button class="drop">How do I cancel?</button>
-                    <div class="panel"><p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p></div>
+                    <button class="drop" id="f3">How do I cancel?</button>
+                    <div class="panel"><p id="t13">Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p></div>
                 </li>
                 <li>
-                    <button class="drop">What can I watch on Netflix?</button>
-                    <div class="panel"><p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want</p></div>
+                    <button class="drop" id="f4">What can I watch on Netflix?</button>
+                    <div class="panel"><p id="t14">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want</p></div>
                 </li>
             </ul>
         </div>
         <div>
-            <button class="try">
+            <button class="try" id="ttry5">
                 TRY IT NOW >
             </button>
         </div>
     </div>
     <div class="section5">
         <div class="box">
-            <p class="call">Questions? Call 000-800-040-1843</p>
+            <p class="call" id="t15">Questions? Call 000-800-040-1843</p>
             <div class="footerBox">
                 
                     <div >
                         <ul class="footerList">
-                            <li class="listelement">FAQ</li>
-                            <li class="listelement">Investor Relations</li>
-                            <li class="listelement">Privacy</li>
-                            <li class="listelement">Speed test</li>
+                            <li class="listelement" id="t16">FAQ</li>
+                            <li class="listelement" id="t17">Investor Relations</li>
+                            <li class="listelement" id="t18">Privacy</li>
+                            <li class="listelement" id="t19">Speed test</li>
                         </ul>
                     </div>
                     <div>
                         <ul class="footerList">
-                            <li class="listelement">Help center</li>
-                            <li class="listelement">jobs</li>
-                            <li class="listelement">Cookie prefrences</li>
-                            <li class="listelement">Legal notice</li>
+                            <li class="listelement" id="t20">Help center</li>
+                            <li class="listelement" id="t21">Jobs</li>
+                            <li class="listelement" id="t22">Cookie prefrences</li>
+                            <li class="listelement" id="t23">Legal notice</li>
                         </ul>
                     </div>
                     <div>
                         <ul class="footerList">
-                            <li class="listelement">Account</li>
-                            <li class="listelement">Way to Watch</li>
-                            <li class="listelement">Coperate Information</li>
-                            <li class="listelement">Netflix originals</li>
+                            <li class="listelement" id="t24">Account</li>
+                            <li class="listelement" id="t25">Ways to Watch</li>
+                            <li class="listelement" id="t26">Coperate Information</li>
+                            <li class="listelement" id="t27">Netflix originals</li>
                         </ul>
                     </div>
                     <div>
                         <ul class="footerList">
-                            <li class="listelement">Media center</li>
-                            <li class="listelement">Term of use</li>
-                            <li class="listelement">Contact us</li>
+                            <li class="listelement"  id="t28">Media center</li>
+                            <li class="listelement" id="t29">Term of use</li>
+                            <li class="listelement" id="t30">Contact us</li>
                         </ul>
                     </div>
             </div>
             <br>
-            <br>
-            <p class="endtext">Netflix India</p>
+            <select name="languageSelect" class="langTranslate" >
+			  <option value="1">English</option>
+			  <option value="2">हिन्दी</option>
+			</select>
+			<br>
+            <p class="endtext" id="t31">Netflix India</p>
         </div>
         
     </div>
